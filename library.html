@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="topbar">
+            <h2 class ="header">simple library</h2>
+            <button id="login">Log in</button>
+        </div>
+        <div class="booksbar">
+            <button id="add">
+                + Add Book
+            </button>
+            <div class="totalbooks">
+                Total Books: <span id="total"></span><span id="totalCount"></span><br> 
+                Read: <span id="totalread"></span><span id="readCount"></span><br>
+                Unread:<span id="totalunread"></span><span id="unreadCount"></span>
+            </div>
+        </div>
+        <div class="booklist">
+            
+        </div>        
+    </div>
+    <div class="form-popup">
+        <form class= "form-container">
+            <h1>Book Information</h1>
+
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" placeholder="The Catcher in the Rye" required>
+
+            <label for="author">Author</label>
+            <input type="text" name="author" id="author" placeholder="JD Salinger">
+
+            <label for="pages">Pages</label>
+            <input type="text" name="pages" id="pages" placeholder="242">
+
+            <button type="button" class="btn" onclick="getValues()">Add Book</button>
+            <button type="button" class="closeform" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+    
+</body>
+</html>
